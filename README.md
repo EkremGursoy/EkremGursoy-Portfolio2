@@ -1,73 +1,111 @@
-# React + TypeScript + Vite
+# Portfolio 2 — Ekrem Gürsoy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React and TypeScript, showcasing three frontend development projects from the Noroff Front-End Development programme.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio is a multi-page single-page application (SPA) built as a course assignment for Portfolio 2. It features a home page with teaser cards for each project and dedicated article pages with full project details, live links, and repository links.
 
-## React Compiler
+### Featured Projects
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Project | Description | Live Site | Repository |
+| --- | --- | --- | --- |
+| **CSS Frameworks** | A social media app built with Bootstrap and Sass | [Live](https://css-frameworks-sable.vercel.app/) | [Repo](https://github.com/EkremGursoy/css-frameworks) |
+| **Auction House** | A full-featured auction platform with bidding and credits | [Live](https://semester-project-2-auctionhouse.vercel.app/) | [Repo](https://github.com/EkremGursoy/semester-project-2-auctionhouse) |
+| **Eeveelutions Shop** | An e-commerce store built with React and TypeScript | [Live](https://eeveelutionsshop.netlify.app/) | [Repo](https://github.com/NoroffFEU/jsfw-2025-v1-eeveelutions-supreme-jsfw) |
 
-## Expanding the ESLint configuration
+## Built With
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [React](https://react.dev/) 19
+- [TypeScript](https://www.typescriptlang.org/) 5.9
+- [React Router](https://reactrouter.com/) v7
+- [Tailwind CSS](https://tailwindcss.com/) v4
+- [Vite](https://vite.dev/) 7
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- npm (comes with Node.js)
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/EkremGursoy/portfolio-2.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Navigate to the project folder:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd portfolio-2
 ```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+### Running Locally
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The site will be available at `http://localhost:5173/`.
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+The output will be in the `dist/` folder, ready for deployment.
+
+## Project Structure
+
+```
+├── public/
+│   └── assets/              # Project screenshots
+├── src/
+│   ├── assets/
+│   │   ├── icons/           # SVG icons (envelope, github, linkedin, link)
+│   │   └── images/          # Profile photo
+│   ├── components/          # Reusable UI components
+│   │   ├── Button.tsx
+│   │   ├── ContactForm.tsx
+│   │   ├── ContactInfo.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── Layout.tsx
+│   │   ├── ProjectCard.tsx
+│   │   └── Tag.tsx
+│   ├── data/
+│   │   └── projects.ts      # Project data
+│   ├── pages/
+│   │   ├── HomePage.tsx      # Home page with hero + teaser cards
+│   │   └── ProjectPage.tsx   # Individual project article page
+│   ├── App.tsx
+│   ├── index.css             # Tailwind config + theme tokens
+│   ├── main.tsx              # Entry point with BrowserRouter
+│   └── routes.tsx            # Route definitions
+├── index.html
+├── vite.config.ts
+├── tsconfig.json
+└── package.json
+```
+
+## Contact
+
+- **Email:** [e.ogulcan.gursoy@gmail.com](mailto:e.ogulcan.gursoy@gmail.com)
+- **LinkedIn:** [linkedin.com/in/ekremgursoy](https://linkedin.com/in/ekremgursoy)
+- **GitHub:** [github.com/EkremGursoy](https://github.com/EkremGursoy)
+
+## License
+
+This project is for educational purposes as part of the Noroff Front-End Development programme.
