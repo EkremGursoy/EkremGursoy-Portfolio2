@@ -37,4 +37,4 @@ Thumbs.db
 *.png
 !public/**/*.png
 !src/**/*.png
-.playwright-mcp/
+

@@ -22,9 +22,10 @@ export default function HomePage() {
             combining both development and design principles.
           </p>
           <p className="text-lg">
-            With a solid foundation in HTML, CSS, and JavaScript, I'm constantly
-            improving my skills and learning new techniques to build interactive
-            and responsive websites.
+            With a solid foundation in HTML, CSS, and JavaScript, and
+            hands-on experience with React, TypeScript, and Tailwind CSS, I'm
+            constantly improving my skills and learning new techniques to build
+            interactive and responsive websites.
           </p>
           <p className="text-lg">
             I'm always looking for new opportunities to grow and collaborate, and
