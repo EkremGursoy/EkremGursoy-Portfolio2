@@ -1,7 +1,7 @@
 import { projects } from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
 import Button from "../components/Button";
-import profileImg from "../assets/images/profile.jpg";
+import profileImg from "../assets/images/profile.webp";
 import envelopeWhite from "../assets/icons/envelope-white.svg";
 import githubBlack from "../assets/icons/github-black.svg";
 

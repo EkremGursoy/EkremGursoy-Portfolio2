@@ -33,6 +33,13 @@ lerna-debug.log*
 .DS_Store
 Thumbs.db
 
+# Python
+.venv/
+
+# Assignment documents
+*.pdf
+*.txt
+
 # Debug / temp
 *.png
 !public/**/*.png
